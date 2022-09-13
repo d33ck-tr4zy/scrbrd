@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class MemberController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Showing the list of members
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return view('member.list');
     }
 
     /**

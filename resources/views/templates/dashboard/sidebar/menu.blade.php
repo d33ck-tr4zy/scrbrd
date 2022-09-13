@@ -45,7 +45,7 @@ Members is where :
         <i class="fa fa-users me-2"></i>Members
     </a>
     <div class="dropdown-menu bg-transparent border-0">
-        <a href="#" class="dropdown-item">
+        <a href="{{ route('member.index') }}" class="dropdown-item">
             List
         </a>
         <a href="#" class="dropdown-item">

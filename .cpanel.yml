@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sipx1783/public_html/scoreboard/
+    - /bin/cp -R * $DEPLOYPATH

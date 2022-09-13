@@ -17,9 +17,13 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 Route::group([ 'middleware' => 'auth'], function(){
 
-    Route::get('/', function () {
-        return view('user-dashboard');
-    })->name('dashboard');
+    Route::controller(\App\Http\Controllers\DashboardController::class)->group(function(){
+        Route::get('/', 'index')->name('dashboard');
+    });
+
+    Route::controller(\App\Http\Controllers\MemberController::class)->group(function(){
+        Route::get('member', 'index')->name('member.index');
+    });
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
