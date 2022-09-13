@@ -1,0 +1,38 @@
+.dashboard {
+    .sidebar {
+        .navbar-brand {
+            img {
+                max-height: 100px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-link {
+                i.fa {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .content {
+        &.open {
+            .dashboard-nav-logo {
+                opacity: 1;
+            }
+        }
+
+        .dashboard-nav-logo {
+            max-height: 30px;
+            opacity: 0;
+            transition: all 1s;
+            margin-left: 20px;
+        }
+
+        .navbar-brand {
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+}

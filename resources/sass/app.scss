@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Fontawesome Pro
+$fa-font-path: '~@fortawesome/fontawesome-pro/webfonts';
+@import '~@fortawesome/fontawesome-pro/scss/fontawesome';
+@import '~@fortawesome/fontawesome-pro/scss/solid';
+@import '~@fortawesome/fontawesome-pro/scss/regular';
+@import '~@fortawesome/fontawesome-pro/scss/brands';
+@import '~@fortawesome/fontawesome-pro/scss/duotone';
+@import '~@fortawesome/fontawesome-pro/scss/light';
+@import '~@fortawesome/fontawesome-pro/scss/thin';
+
+
+// Variables
+@import 'variables';
+
+// darkpan templates
+@import "darkpan/bootstrap";
+@import "darkpan/style.css";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'scoreboards/scoreboards';
+
+
